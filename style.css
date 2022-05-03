@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: #aaa9a9;
+}
+
+.container {  display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-row-gap: 10px;
+  }
+  .header-grid{
+      grid-column: 1/15;
+  }
+
+/* masoneria */
+#titulo-masoneria{
+    background-color:#08141b ;
+    color: white;
+    text-align: center;
+}
+
+.texto-masoneria{
+    grid-column: 1/13;
+    border: rgb(82, 77, 77) solid 3px;
+    border-radius: 10px;
+    
+}
+
+
+.carousel-logia{
+      grid-column: 1/13;
+      border: rgb(82, 77, 77) solid 3px;
+      border-radius:10px ;
+  }
+.encontranos{
+      grid-column: 1/13;
+      
+      background-color: rgb(165, 156, 156);
+      border: rgb(82, 77, 77) solid 3px;
+      border-radius: 10px;
+      text-align: center;
+ 
+   }
