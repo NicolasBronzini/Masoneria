@@ -46,3 +46,28 @@ body{
       text-align: center;
  
    }
+   /* formulario */
+
+   .formulario{
+       
+      
+       grid-column: 1/13;
+    border-radius: 2px;
+    border: #414447 solid 3px;
+    margin: 50px;
+}
+   .titulo-formulario{
+       border-radius: 2px;
+       border: #202122 solid 3px;
+       color:white;
+       background-color: #4b5053;
+       
+       
+       
+   }
+   .input-formulario{
+       padding: 10px 30px;
+   }
+   section{
+       padding: 10px;
+   }
