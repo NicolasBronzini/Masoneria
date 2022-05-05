@@ -18,6 +18,32 @@ body{
       grid-column: 1/15;
   }
 
+/* INDEX */
+
+
+
+
+.index-titulo{
+    grid-column: 1/13;
+    
+}
+/* IFRAMES */
+.iframes{
+    grid-column: 1/13;
+}
+.frames{
+background-color: white;
+display: inline-table;
+width: 100%;
+justify-content: center;
+}
+
+.videos-index{
+padding: 50px;
+width: 400px;
+height: 300px;
+}
+
 /* masoneria */
 #titulo-masoneria{
     background-color:#08141b ;
@@ -31,23 +57,39 @@ body{
     border-radius: 10px;
     
 }
-
-
-
-
-
-
-/* index */
-.index-titulo{
+.requisitos{
     grid-column: 1/13;
+    padding: 20px;
+    background-color:white;
+    border-radius: 3px;
+    margin-bottom:10px ;
+}
+.requisitos-textos{
+    display: inline-flex;
+    border: #4b505348 solid 3px;
+    border-radius: 3px;
+}
+
+.textos-requisitos{
+    padding: 90px 50px;
+    
+}
+.img-requisitos{
+    border-radius: 3px;
+    width: 100%;
 }
 
 
-/* masoneria */
+
+
 .carousel-logia{
       grid-column: 1/13;
       border: rgb(82, 77, 77) solid 3px;
       border-radius:10px ;
+      
+  }
+  .img-carrousel{
+      height: 800px;
   }
 .encontranos{
       grid-column: 1/13;
@@ -62,6 +104,9 @@ body{
     grid-column: 1/13;
     padding-top: 50px;
     padding-bottom: 50px;
+   }
+   p{
+       padding: 10px;
    }
    /* formulario */
 
@@ -82,6 +127,7 @@ body{
        background-color: #4b5053;
        text-align: center;
        
+       padding-top: 25px;
        height: 100px;
    }
 
@@ -137,4 +183,30 @@ label{
 ul li {
     list-style:none;
     margin: 10px;
+}
+
+
+
+/* mediaqueris */
+
+@media screen and ( max-width:1200px) {
+    
+
+    .requisitos-textos{
+    display: block;
+    }
+    .img-carrousel{
+        height: 650px;
+    }
+}
+
+@media screen and ( max-width:1000px){
+    .img-carrousel{
+        height: 500px;
+    }
+}
+@media screen and ( max-width:800px){
+    .img-carrousel{
+        height: 400px;
+    }
 }
