@@ -38,8 +38,8 @@ body{
 }
 .iframes-items{
    padding: 25px;
-    justify-content: center;
-    display: block;
+   width: 500px;
+    
 }
 
 /* masoneria */
@@ -191,7 +191,23 @@ ul li {
 
 
 /* mediaqueris */
-
+@media screen and ( max-width:1400px){
+    .iframes-container{
+        display:block;
+    }
+    .iframes-items{
+       width: 100%;
+       margin: auto;
+    }
+    .iframes{
+         ;
+    }
+    .iframes-textos{
+        text-align: center;
+        width: 500px;
+        
+    }
+}
 @media screen and ( max-width:1200px) {
     
 
@@ -213,6 +229,19 @@ ul li {
 @media screen and ( max-width:1000px){
     .img-carrousel{
         height: 500px;
+    }
+    .pie{
+       display: block ;
+       
+    }
+    .img-footer{
+     display: flex;
+     justify-content: center;
+       
+    }
+    .contacto{
+        display: flex;
+        justify-content: center;
     }
 }
 @media screen and ( max-width:800px){
