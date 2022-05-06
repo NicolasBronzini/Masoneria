@@ -25,23 +25,21 @@ body{
 
 .index-titulo{
     grid-column: 1/13;
-    
+    padding: 50px;
+    font-size: 1.2rem;
 }
-/* IFRAMES */
-.iframes{
+#titulo{
+    text-align: center;
+}
+.iframes-container{
     grid-column: 1/13;
+    display: inline-flex;
+    background-color:white ;
 }
-.frames{
-background-color: white;
-display: inline-table;
-width: 100%;
-justify-content: center;
-}
-
-.videos-index{
-padding: 50px;
-width: 400px;
-height: 300px;
+.iframes-items{
+   padding: 25px;
+    justify-content: center;
+    display: block;
 }
 
 /* masoneria */
@@ -59,24 +57,28 @@ height: 300px;
 }
 .requisitos{
     grid-column: 1/13;
+    width: 100%;
     padding: 20px;
-    background-color:white;
+    background-color:rgba(25, 23, 39, 0.315);
     border-radius: 3px;
     margin-bottom:10px ;
 }
-.requisitos-textos{
+
+.requisitos-items{
     display: inline-flex;
-    border: #4b505348 solid 3px;
+    border: #4b505360 solid 3px;
     border-radius: 3px;
+    
 }
 
 .textos-requisitos{
     padding: 90px 50px;
-    
+    font-size: 1.3rem;
 }
 .img-requisitos{
     border-radius: 3px;
-    width: 100%;
+    height: 100%;
+    width: 500px;
 }
 
 
@@ -99,12 +101,13 @@ height: 300px;
       border-radius: 10px;
       text-align: center;
  
-   }
-   .acordeon{
-    grid-column: 1/13;
-    padding-top: 50px;
-    padding-bottom: 50px;
-   }
+    }
+    .acordeon{
+     grid-column: 1/13;
+     padding-top: 50px;
+     padding-bottom: 50px;
+    }
+
    p{
        padding: 10px;
    }
@@ -192,9 +195,16 @@ ul li {
 @media screen and ( max-width:1200px) {
     
 
-    .requisitos-textos{
+    .requisitos-items{
     display: block;
     }
+    
+    .img-requisitos{
+        width: 100%;
+        
+    }
+        
+    
     .img-carrousel{
         height: 650px;
     }
