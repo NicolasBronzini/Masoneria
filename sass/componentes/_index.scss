@@ -1,0 +1,51 @@
+.index-titulo{
+    grid-column: 1/13;
+    padding: 50px;
+    font-size: 1.2rem;
+
+
+    #titulo{
+        text-align: center;
+    }
+
+
+}
+
+.iframes-container{
+    grid-column: 1/13;
+    display: inline-flex;
+    background-color:white ;
+
+
+
+    .iframes-items{
+        padding: 25px;
+        width: 500px;
+         
+     }
+
+     
+    
+}
+ /* mediaqueris */
+    @media screen and ( max-width:1400px){
+    .iframes-container{
+        display:block;
+
+
+    .iframes-items{
+        width: 100%;
+        margin: auto;
+
+
+        .iframes-textos{
+                    text-align: center;
+                    width: 500px;
+                    
+                }
+
+             }
+
+        }
+    
+    }  

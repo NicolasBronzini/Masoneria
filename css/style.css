@@ -1,0 +1,225 @@
+@charset "UTF-8";
+.header-grid {
+  grid-column: 1/15;
+}
+
+body {
+  background-color: #aaa9a9;
+}
+body .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  grid-row-gap: 10px;
+}
+
+.pie {
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.pie .img-footer {
+  padding: 20px 100px;
+}
+.pie .contacto {
+  color: white;
+  padding: 70px 100px;
+}
+.pie ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .pie {
+    display: block;
+  }
+  .pie .img-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .pie .img-footer .contacto {
+    display: flex;
+    justify-content: center;
+  }
+}
+.index-titulo {
+  grid-column: 1/13;
+  padding: 50px;
+  font-size: 1.2rem;
+}
+.index-titulo #titulo {
+  text-align: center;
+}
+
+.iframes-container {
+  grid-column: 1/13;
+  display: inline-flex;
+  background-color: white;
+}
+.iframes-container .iframes-items {
+  padding: 25px;
+  width: 500px;
+}
+
+/* mediaqueris */
+@media screen and (max-width: 1400px) {
+  .iframes-container {
+    display: block;
+  }
+  .iframes-container .iframes-items {
+    width: 100%;
+    margin: auto;
+  }
+  .iframes-container .iframes-items .iframes-textos {
+    text-align: center;
+    width: 500px;
+  }
+}
+.container .texto-masoneria {
+  grid-column: 1/13;
+  border: rgb(82, 77, 77) solid 3px;
+  border-radius: 10px;
+}
+.container .texto-masoneria #titulo-masoneria {
+  background-color: #08141b;
+  color: white;
+  text-align: center;
+}
+.container .carousel-logia {
+  grid-column: 1/13;
+  border: rgb(82, 77, 77) solid 3px;
+  border-radius: 10px;
+}
+.container .carousel-logia .img-carrousel {
+  height: 800px;
+}
+@media screen and (max-width: 1200px) {
+  .container .carousel-logia .img-carrousel {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container .carousel-logia .img-carrousel {
+    height: 400px;
+  }
+}
+.container .encontranos {
+  grid-column: 1/13;
+  background-color: rgb(165, 156, 156);
+  border: rgb(82, 77, 77) solid 3px;
+  border-radius: 10px;
+  text-align: center;
+}
+.container .encontranos #titulo-masoneria {
+  background-color: #08141b;
+  color: white;
+  text-align: center;
+}
+.container .requisitos {
+  grid-column: 1/13;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(25, 23, 39, 0.315);
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.container .requisitos .requisitos-items {
+  display: inline-flex;
+  border: rgba(75, 80, 83, 0.3764705882) solid 3px;
+  border-radius: 3px;
+}
+.container .requisitos .requisitos-items .textos-requisitos {
+  padding: 90px 50px;
+  font-size: 1.3rem;
+}
+.container .requisitos .requisitos-items .img-requisitos {
+  border-radius: 3px;
+  height: 100%;
+  width: 500px;
+}
+@media screen and (max-width: 1200px) {
+  .container .requisitos .requisitos-items {
+    display: block;
+  }
+  .container .requisitos .requisitos-items .img-requisitos {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .img-carrousel {
+    height: 400px;
+  }
+}
+.container .main-compañeros {
+  grid-column: 1/13;
+  padding: 50px;
+}
+.container .main-compañeros .compañeros {
+  background-color: white;
+  padding: 20px;
+  padding: 10px 70px;
+}
+.container .main-compañeros .compañeros .titulo-compañeros {
+  text-align: center;
+}
+.container .main-compañeros .compañeros p {
+  max-width: 1000px;
+}
+
+.container .formulario {
+  grid-column: 1/13;
+  border-radius: 2px;
+  border: #202122 solid 3px;
+  margin: 50px;
+}
+.container .formulario .titulo-formulario {
+  border-radius: 2px;
+  border-bottom: #202122 solid 3px;
+  color: white;
+  background-color: #4b5053;
+  text-align: center;
+  padding-top: 25px;
+  height: 100px;
+}
+.container .formulario .inputs {
+  padding: 20px 50px;
+  grid-auto-rows: auto;
+  background-color: rgb(221, 220, 220);
+}
+.container .formulario .inputs label {
+  padding: 20px 0px 0px 0px;
+}
+.container .formulario .inputs .input-tamaño {
+  width: 100%;
+  border: rgba(130, 133, 134, 0.5607843137) solid 1px;
+  border-radius: 3px;
+  height: 40px;
+}
+.container .formulario .inputs .edad {
+  width: 50px !important;
+}
+.container .formulario .inputs .motivo {
+  height: 200px;
+}
+
+.container .main-compañeros {
+  grid-column: 1/13;
+  padding: 50px;
+}
+.container .main-compañeros .compañeros {
+  background-color: white;
+  padding: 20px;
+  padding: 10px 70px;
+}
+.container .main-compañeros .compañeros .titulo-compañeros {
+  text-align: center;
+}
+.container .main-compañeros .compañeros p {
+  max-width: 1000px;
+}
+
+/*# sourceMappingURL=style.css.map */

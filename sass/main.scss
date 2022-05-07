@@ -1,0 +1,19 @@
+
+    // layout header
+@import './layout/header';
+// layout main
+@import './layout/cuerpo';
+// layout del footer
+@import './layout/pie';
+
+
+// estilos del index
+@import './componentes/index.scss';
+// estilos del masoneria
+@import './componentes/masoneria.scss';
+// estilos del quienes somos
+@import './componentes/quienessomos.scss';
+// estilos del ingreso
+@import './componentes/ingreso.scss';
+// estilos del argentina
+@import './componentes/argentina.scss';

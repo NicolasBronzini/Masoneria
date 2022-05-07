@@ -1,0 +1,46 @@
+.container{
+
+    .formulario{
+            grid-column: 1/13;
+        border-radius: 2px;
+        border: #202122 solid 3px;
+        margin: 50px;
+
+
+        .titulo-formulario{
+            border-radius: 2px;
+            border-bottom: #202122 solid 3px;
+            color:white;
+            background-color: #4b5053;
+            text-align: center;
+            
+            padding-top: 25px;
+            height: 100px;
+        }
+
+        .inputs{
+            padding: 20px 50px;
+          
+            
+            grid-auto-rows: auto;
+            background-color: rgb(221, 220, 220);
+
+            label{
+                padding: 20px 0px 0px 0px ;
+            }  
+            .input-tamaño{
+                width: 100%;
+                border: #8285868f solid 1px;
+                border-radius: 3px;
+                height:40px ;
+                
+            }
+            .edad{
+                width: 50px !important;
+            }
+            .motivo{
+                height: 200px;
+            }
+        } 
+     }
+}
