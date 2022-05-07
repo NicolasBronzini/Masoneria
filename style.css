@@ -188,6 +188,28 @@ ul li {
     margin: 10px;
 }
 
+/* compañers */
+.main-compañeros{
+    grid-column: 1/13;
+    padding: 50px;
+}
+.compañeros{
+    
+       
+    background-color: white;
+    padding: 20px;
+    padding: 10px 70px;
+}
+.compañeros p {
+    max-width: 1000px;
+}
+.titulo-compañeros{
+    text-align: center;
+}
+
+
+
+
 
 
 /* mediaqueris */
@@ -199,9 +221,7 @@ ul li {
        width: 100%;
        margin: auto;
     }
-    .iframes{
-         ;
-    }
+    
     .iframes-textos{
         text-align: center;
         width: 500px;
