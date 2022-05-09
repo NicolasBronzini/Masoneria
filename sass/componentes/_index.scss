@@ -20,12 +20,42 @@
 
     .iframes-items{
         padding: 25px;
-        width: 500px;
+        
          
      }
 
      
     
+}
+.container{
+    .apartado-card{
+        grid-column: 1/13;
+       
+       padding: 25px;
+       
+        .card{
+            padding: 20px;
+            display: inline-flex;
+            width: 400px;
+            
+            justify-content: center;
+            
+                .items-card{
+                    width: 100%;
+                    padding: 20px;
+                    height:500px;
+                    .titulos-card{
+                        text-align: center;
+                    }
+                
+                }
+                .img-card{
+                    border: black solid 3px;
+                    border-radius: 5px;
+                }
+        }
+        
+    }
 }
  /* mediaqueris */
     @media screen and ( max-width:1400px){
