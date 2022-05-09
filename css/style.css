@@ -85,6 +85,18 @@ body .container {
   border: black solid 3px;
   border-radius: 5px;
 }
+.container .apartado-card .card #img-scout {
+  height: 207px;
+}
+@media screen and (max-width: 1400px) {
+  .container .apartado-card .card {
+    display: block;
+    width: 100%;
+  }
+  .container .apartado-card .card #img-scout {
+    height: 100%;
+  }
+}
 
 /* mediaqueris */
 @media screen and (max-width: 1400px) {
@@ -93,11 +105,14 @@ body .container {
   }
   .iframes-container .iframes-items {
     width: 100%;
-    margin: auto;
+  }
+  .iframes-container .iframes-items .iframes {
+    display: flex;
+    justify-content: center;
   }
   .iframes-container .iframes-items .iframes-textos {
     text-align: center;
-    width: 500px;
+    width: 100%;
   }
 }
 .container .texto-masoneria {
