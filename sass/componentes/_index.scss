@@ -63,8 +63,14 @@
             .card{
                 display: block;
                 width: 100%;
+                margin-top: 20px;
+                
+                .items-card{
 
+                    height: max-content;
 
+                    
+                }
                 #img-scout{
                     height: 100%;
                 }

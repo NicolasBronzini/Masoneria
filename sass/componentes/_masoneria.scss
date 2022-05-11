@@ -49,8 +49,7 @@
         }
     }
 
-
-
+   
     .requisitos{
         grid-column: 1/13;
         width: 100%;
@@ -89,10 +88,28 @@
         }
     }
     
+    .simbolos{
+       grid-column: 1/13;
+    }
 }
 
 @media screen and ( max-width:800px){
     .img-carrousel{
         height: 400px;
+    }
+}
+.simbolos{
+    grid-column: 1/13;
+    width: 100%;
+    padding: 20px;
+    background-color:white;
+    border: #4b505360 solid 1px;
+    border-radius: 3px;
+    margin-bottom:10px ;
+
+
+    #img-simbolo{
+        border-radius: 3px;
+        border: #4b505360 solid 3px;
     }
 }

@@ -92,6 +92,10 @@ body .container {
   .container .apartado-card .card {
     display: block;
     width: 100%;
+    margin-top: 20px;
+  }
+  .container .apartado-card .card .items-card {
+    height: max-content;
   }
   .container .apartado-card .card #img-scout {
     height: 100%;
@@ -185,12 +189,29 @@ body .container {
     width: 100%;
   }
 }
+.container .simbolos {
+  grid-column: 1/13;
+}
 
 @media screen and (max-width: 800px) {
   .img-carrousel {
     height: 400px;
   }
 }
+.simbolos {
+  grid-column: 1/13;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: rgba(75, 80, 83, 0.3764705882) solid 1px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.simbolos #img-simbolo {
+  border-radius: 3px;
+  border: rgba(75, 80, 83, 0.3764705882) solid 3px;
+}
+
 .container .main-compañeros {
   grid-column: 1/13;
   padding: 50px;
@@ -226,6 +247,7 @@ body .container {
   padding: 20px 50px;
   grid-auto-rows: auto;
   background-color: rgb(221, 220, 220);
+  width: 100%;
 }
 .container .formulario .inputs label {
   padding: 20px 0px 0px 0px;
