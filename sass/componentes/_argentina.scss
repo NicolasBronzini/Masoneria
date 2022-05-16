@@ -3,20 +3,19 @@
         grid-column: 1/13;
         padding: 50px;
 
-        .compañeros{
+        .argentina{
     
        
-            background-color: white;
-            padding: 20px;
-            padding: 10px 70px;
+            @extend %textos;
+            font-size: 1.1rem;
+            
 
             .titulo-compañeros{
                 text-align: center;
             }
+           
         }
-
-        .compañeros p {
-            max-width: 1000px;
-        }
+       
+        
     }
 }

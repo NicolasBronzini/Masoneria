@@ -1,0 +1,43 @@
+// mapas
+$textos:(
+    tamaño:100%,
+    espacios: 90px 50px,
+    letra: 1.3rem,
+    bg-color:white,
+);
+.compañeros p {
+        width: map-get($textos, tamaño );
+        font-size: map-get($textos, letra );
+}
+.textos-requisitos{
+    width: map-get($textos, tamaño );
+    padding:map-get($textos, espacios ) ;
+    font-size: map-get($textos, letra );
+}
+.text-{
+    padding:map-get($textos, espacios ) ;
+    
+}
+
+
+
+$img:(
+    radio: 3px,
+    altura: 100%,
+   ancho: 500px,
+   borde:  #4b505360 solid 3px,
+);
+.img-requisitos{
+    border-radius:map-get($img, radio ) ;
+    height:map-get($img, altura ) ;
+   width:map-get($img, ancho ) ;
+   border: map-get($img, borde );
+}
+.img-f{
+    border-radius:map-get($img, radio ) ;
+    height:map-get($img, altura ) ;
+    border: map-get($img, borde );
+    margin: 10px;
+   
+};
+// mixin

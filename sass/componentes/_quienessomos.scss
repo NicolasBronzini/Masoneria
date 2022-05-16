@@ -8,17 +8,43 @@
         .compañeros{
     
        
-            background-color: white;
-            padding: 20px;
-            padding: 10px 70px;
+            @extend %textos;
+            font-size: 1.2rem;
 
             .titulo-compañeros{
                 text-align: center;
             }
+           
         }
-
-        .compañeros p {
-            max-width: 1000px;
-        }
+        
     }
 }
+ @media screen and (max-width: 750px){
+        .container{
+                width: 100%;
+
+
+                .main-compañeros{
+                   display: grid none;
+                   width: 100%;
+            
+                    .compañeros{
+                      font-size: 1.1rem;  
+                      padding: none;
+                      width: 300px;
+                      margin: none;
+                      
+
+                         .titulo-compañeros{
+                            text-align: center;
+                            font-size: 1.2;
+                        } 
+                        
+
+                     }
+                     .compañeros p {
+                        font-size: 1.1rem; 
+                     }
+                 }
+         }
+    }

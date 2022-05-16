@@ -1,4 +1,19 @@
 
+// global class
+
+
+// bases
+// mapas-get
+@import './base/mapas';
+// mixin
+@import './base/mixin';
+// extend
+@import './base/extend';
+
+
+
+
+
     // layout header
 @import './layout/header';
 // layout main
@@ -6,7 +21,7 @@
 // layout del footer
 @import './layout/pie';
 
-
+// componentes
 // estilos del index
 @import './componentes/index.scss';
 // estilos del masoneria
@@ -17,3 +32,5 @@
 @import './componentes/ingreso.scss';
 // estilos del argentina
 @import './componentes/argentina.scss';
+
+

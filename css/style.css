@@ -1,4 +1,38 @@
 @charset "UTF-8";
+.compañeros p {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.textos-requisitos {
+  width: 100%;
+  padding: 90px 50px;
+  font-size: 1.3rem;
+}
+
+.text- {
+  padding: 90px 50px;
+}
+
+.img-requisitos {
+  border-radius: 3px;
+  height: 100%;
+  width: 500px;
+  border: rgba(75, 80, 83, 0.3764705882) solid 3px;
+}
+
+.img-f {
+  border-radius: 3px;
+  height: 100%;
+  border: rgba(75, 80, 83, 0.3764705882) solid 3px;
+  margin: 10px;
+}
+
+.container .main-compañeros .argentina, .container .main-compañeros .compañeros {
+  background-color: white;
+  padding: 20px 70px;
+}
+
 .header-grid {
   grid-column: 1/15;
 }
@@ -25,24 +59,40 @@ body .container {
 }
 .pie .contacto {
   color: white;
+  list-style: none;
   padding: 70px 100px;
 }
-.pie ul li {
+.pie .datos-contacto {
   list-style: none;
   margin: 10px;
 }
 
 @media screen and (max-width: 1000px) {
   .pie {
-    display: block;
+    display: inline-block;
   }
   .pie .img-footer {
     display: flex;
     justify-content: center;
   }
-  .pie .img-footer .contacto {
+  .pie .contacto {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: left;
+    margin-left: -50px;
+  }
+  .pie .contacto .datos-contacto {
+    font-size: 1rem;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contacto {
+    padding: 10px;
+  }
+  .contacto ul {
+    width: 100%;
   }
 }
 .index-titulo {
@@ -61,6 +111,10 @@ body .container {
 }
 .iframes-container .iframes-items {
   padding: 25px;
+}
+.iframes-container .iframes-items .img-iframes {
+  width: 357;
+  height: 201;
 }
 
 .container .apartado-card {
@@ -149,7 +203,7 @@ body .container {
 }
 .container .encontranos {
   grid-column: 1/13;
-  background-color: rgb(165, 156, 156);
+  background-color: white;
   border: rgb(82, 77, 77) solid 3px;
   border-radius: 10px;
   text-align: center;
@@ -172,21 +226,20 @@ body .container {
   border: rgba(75, 80, 83, 0.3764705882) solid 3px;
   border-radius: 3px;
 }
-.container .requisitos .requisitos-items .textos-requisitos {
-  padding: 90px 50px;
-  font-size: 1.3rem;
-}
-.container .requisitos .requisitos-items .img-requisitos {
-  border-radius: 3px;
-  height: 100%;
-  width: 500px;
-}
 @media screen and (max-width: 1200px) {
   .container .requisitos .requisitos-items {
     display: block;
   }
   .container .requisitos .requisitos-items .img-requisitos {
     width: 100%;
+  }
+  .container .requisitos .requisitos-items .textos-requisitos {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 800px) {
+  .container .requisitos .requisitos-items .textos-requisitos {
+    font-size: 1rem;
   }
 }
 .container .simbolos {
@@ -212,22 +265,43 @@ body .container {
   border: rgba(75, 80, 83, 0.3764705882) solid 3px;
 }
 
+.textos-requisitos {
+  font-size: 1rem;
+}
+
 .container .main-compañeros {
   grid-column: 1/13;
   padding: 50px;
 }
 .container .main-compañeros .compañeros {
-  background-color: white;
-  padding: 20px;
-  padding: 10px 70px;
+  font-size: 1.2rem;
 }
 .container .main-compañeros .compañeros .titulo-compañeros {
   text-align: center;
 }
-.container .main-compañeros .compañeros p {
-  max-width: 1000px;
-}
 
+@media screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+  .container .main-compañeros {
+    display: grid none;
+    width: 100%;
+  }
+  .container .main-compañeros .compañeros {
+    font-size: 1.1rem;
+    padding: none;
+    width: 300px;
+    margin: none;
+  }
+  .container .main-compañeros .compañeros .titulo-compañeros {
+    text-align: center;
+    font-size: 1.2;
+  }
+  .container .main-compañeros .compañeros p {
+    font-size: 1.1rem;
+  }
+}
 .container .formulario {
   grid-column: 1/13;
   border-radius: 2px;
@@ -246,8 +320,9 @@ body .container {
 .container .formulario .inputs {
   padding: 20px 50px;
   grid-auto-rows: auto;
-  background-color: rgb(221, 220, 220);
+  background-color: #acb1b4;
   width: 100%;
+  height: 100%;
 }
 .container .formulario .inputs label {
   padding: 20px 0px 0px 0px;
@@ -257,6 +332,7 @@ body .container {
   border: rgba(130, 133, 134, 0.5607843137) solid 1px;
   border-radius: 3px;
   height: 40px;
+  background-color: white;
 }
 .container .formulario .inputs .edad {
   width: 50px !important;
@@ -269,16 +345,11 @@ body .container {
   grid-column: 1/13;
   padding: 50px;
 }
-.container .main-compañeros .compañeros {
-  background-color: white;
-  padding: 20px;
-  padding: 10px 70px;
+.container .main-compañeros .argentina {
+  font-size: 1.1rem;
 }
-.container .main-compañeros .compañeros .titulo-compañeros {
+.container .main-compañeros .argentina .titulo-compañeros {
   text-align: center;
-}
-.container .main-compañeros .compañeros p {
-  max-width: 1000px;
 }
 
 /*# sourceMappingURL=style.css.map */

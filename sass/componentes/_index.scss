@@ -14,14 +14,17 @@
 .iframes-container{
     grid-column: 1/13;
     display: inline-flex;
-    background-color:white ;
+    @include bg-color;
 
     
 
     .iframes-items{
         padding: 25px;
         
-         
+         .img-iframes{
+            width:357 ;
+            height:201;
+         }
      }
 
      

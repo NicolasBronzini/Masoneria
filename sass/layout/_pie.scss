@@ -15,13 +15,14 @@
     .contacto{
     
             color: white;
-            
+            list-style:none;
             padding: 70px 100px;
         }
 
-        ul li {
+        .datos-contacto{
             list-style:none;
             margin: 10px;
+           
         }
     
     
@@ -30,7 +31,7 @@
 @media screen and ( max-width:1000px){
 
         .pie{
-            display: block ;
+            display: inline-block ;
             
 
 
@@ -39,12 +40,32 @@
                 justify-content: center;
                   
 
-
+                 }
                 .contacto{
+                    width: 100%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: start;
+                    align-items: left;
+                    margin-left: -50px;
+                   .datos-contacto{
+                        
+                     
+                        font-size: 1rem;
+                        margin: auto;
+                        
+                    
+                    
                 }
-               }
+               
          }
 
+    }
+}
+    @media screen and ( max-width:650px){
+        .contacto{
+           padding: 10px;
+            ul{
+                width: 100%;
+            }
+        }
     }

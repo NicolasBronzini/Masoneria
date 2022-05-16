@@ -17,14 +17,16 @@
             padding-top: 25px;
             height: 100px;
         }
+       
 
         .inputs{
             padding: 20px 50px;
           
             
             grid-auto-rows: auto;
-            background-color: rgb(221, 220, 220);
+            background-color: #acb1b4;
             width: 100%;
+            height: 100%;
 
             label{
                 padding: 20px 0px 0px 0px ;
@@ -34,6 +36,7 @@
                 border: #8285868f solid 1px;
                 border-radius: 3px;
                 height:40px ;
+                @include bg-color;
                 
             }
             .edad{
