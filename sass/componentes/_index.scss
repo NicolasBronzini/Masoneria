@@ -1,11 +1,15 @@
 .index-titulo{
     grid-column: 1/13;
-    padding: 50px;
-    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 10px;
+    
+    width: 100%;
 
-
+    
     #titulo{
         text-align: center;
+        background-color: transparent;
+        font-size: 1.5rem;
     }
 
 
@@ -15,8 +19,8 @@
     grid-column: 1/13;
     display: inline-flex;
     @include bg-color;
-
     
+    margin: auto;
 
     .iframes-items{
         padding: 25px;
@@ -34,7 +38,7 @@
     .apartado-card{
         grid-column: 1/13;
        
-       padding: 25px;
+       padding: 20px;
        
         .card{
             padding: 20px;
@@ -92,16 +96,16 @@
 
         .iframes-items{
         width: 100%;
-        
+        display: block;
+        justify-content: center;
             .iframes{
                 display: flex;
                 justify-content: center;
             }
 
          .iframes-textos{
-                    text-align: center;
-                    width: 100%;
-                   
+                    
+                  max-width: 500px;  
                     
                 }
 

@@ -1,10 +1,53 @@
 .container{
 
+    .explicacion-form{
+        grid-column: 1/13; 
+        display: inline-flex;
+        background-color: rgba(255, 255, 255, 0.479);
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: #2021224b solid 3px;
+
+            .textos-explicacion{
+               padding: 20px;
+               margin-top: 20px;
+
+
+                #titulo-explicacion{
+                    color: #6b0707;
+                }
+                #titulo-explicacion-1{
+                    color: #4b5053;
+                }
+            }
+
+            .img-explicacion{
+               width: 1200px;
+               height: auto;
+               overflow: hidden;
+               border:#2021224b solid 3px ;
+               border-radius: 3px;
+            }
+    }
+    @media screen and ( max-width:1200px){
+        .explicacion-form{
+            display: inline-block;
+            .img-explicacion{
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    
     .formulario{
             grid-column: 1/13;
         border-radius: 2px;
         border: #202122 solid 3px;
         margin: 50px;
+        
 
 
         .titulo-formulario{

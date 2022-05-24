@@ -1,21 +1,45 @@
 .container{
     .main-compañeros{
-        grid-column: 1/13;
-        padding: 50px;
-
+       padding: 20px;
         .argentina{
     
-       
+            
             @extend %textos;
             font-size: 1.1rem;
-            
-
+            padding: 20px 30px;
+        
+            .img-i{
+               
+                width: 80%;
+                height: auto;
+                justify-content: center;
+            }
+          
             .titulo-compañeros{
                 text-align: center;
             }
-           
+           #img-a{
+              
+               width: 80%;
+               margin: auto;
+           }
         }
        
         
     }
+   
+    @media screen and (max-width: 600px) {
+            .main-compañeros{
+                
+               
+                width: 100%;
+                .argentina{
+                    .img-i{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+     
 }

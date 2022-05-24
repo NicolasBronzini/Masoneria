@@ -1,15 +1,26 @@
 
 
 .container{
+    
     .main-compañeros{
         grid-column: 1/13;
-        padding: 50px;
-
-        .compañeros{
-    
        
-            @extend %textos;
+        .lcom{
+            border-radius: 3px;
+            margin-top: 20px;
+                 @extend %textos;
             font-size: 1.2rem;
+            
+               .img-f{
+               display: flex;
+               width: 80%;
+               height: auto;
+               margin: auto;
+
+               
+               
+            }
+           
 
             .titulo-compañeros{
                 text-align: center;
@@ -21,28 +32,32 @@
 }
  @media screen and (max-width: 750px){
         .container{
-                width: 100%;
-
-
+           
+                grid-column: none;
                 .main-compañeros{
-                   display: grid none;
+                  
+                    box-sizing: content-box;
                    width: 100%;
-            
-                    .compañeros{
-                      font-size: 1.1rem;  
-                      padding: none;
-                      width: 300px;
-                      margin: none;
+                   
+                   .img-f{
+                       width: 100%;
+                   
+                   }
+                    .lcom{
+                      font-size: 1rem;  
+                      box-sizing: border-box;
+                      width:100%;
+                     
                       
 
                          .titulo-compañeros{
                             text-align: center;
-                            font-size: 1.2;
+                            font-size: 1.1;
                         } 
                         
 
                      }
-                     .compañeros p {
+                     .lcom p {
                         font-size: 1.1rem; 
                      }
                  }
