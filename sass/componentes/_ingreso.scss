@@ -41,12 +41,14 @@
 
 
 
+
     
     .formulario{
             grid-column: 1/13;
         border-radius: 2px;
         border: #202122 solid 3px;
-        margin: 50px;
+        margin: 0px;
+        margin-bottom: 20px;
         
 
 
@@ -63,14 +65,14 @@
        
 
         .inputs{
-            padding: 20px 50px;
-          
+            padding: 0px 1rem;
+            
             
             grid-auto-rows: auto;
             background-color: #acb1b4;
             width: 100%;
             height: 100%;
-
+            padding-bottom: 10px;
             label{
                 padding: 20px 0px 0px 0px ;
             }  
@@ -89,5 +91,6 @@
                 height: 200px;
             }
         } 
+      
      }
 }

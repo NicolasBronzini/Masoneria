@@ -7,25 +7,38 @@
             @extend %textos;
             font-size: 1.1rem;
             padding: 20px 30px;
-        
-            .img-i{
-               
-                width: 80%;
-                height: auto;
-                justify-content: center;
+            .a-texto1{
+                display: inline-block;
             }
-          
+            .img-i{
+                border: solid 3px rgb(53, 50, 50);
+                width: 100%;
+                height: auto;
+                 margin-bottom: 50px;
+            }
+            .img-e{
+                border: solid 3px rgb(53, 50, 50);
+                width: 100%;
+                height: auto;
+               
+            }
             .titulo-compañeros{
                 text-align: center;
             }
            #img-a{
-              
-               width: 80%;
+              border: solid 3px rgb(53, 50, 50);
+               width: 100%;
                margin: auto;
+           }
+           #img-escuadra{
+               float: right;
+               margin: 10px;
+               width: 500px;
+               height: auto;
+               border: solid 3px rgb(53, 50, 50);
            }
         }
        
-        
     }
    
     @media screen and (max-width: 600px) {

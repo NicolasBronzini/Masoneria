@@ -37,9 +37,21 @@
   box-sizing: content-box;
   width: 100%;
 }
+.header-grid a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.header-grid a:hover, .header-grid a:focus {
+  background-size: 100% 2px;
+}
 
 body {
   background-color: #aaa9a9;
+  font-family: Sans-serif;
 }
 body .container {
   display: grid;
@@ -104,6 +116,7 @@ body .container {
   grid-column: 1/13;
   margin-top: 10px;
   padding: 10px;
+  font-size: 1.2rem;
   width: 100%;
 }
 .index-titulo #titulo {
@@ -187,6 +200,8 @@ body .container {
   grid-column: 1/13;
   border: rgb(82, 77, 77) solid 3px;
   border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: rgba(250, 250, 250, 0.527);
 }
 .container .texto-masoneria #titulo-masoneria {
   background-color: #08141b;
@@ -211,18 +226,6 @@ body .container {
     height: 400px;
   }
 }
-.container .encontranos {
-  grid-column: 1/13;
-  background-color: white;
-  border: rgb(82, 77, 77) solid 3px;
-  border-radius: 10px;
-  text-align: center;
-}
-.container .encontranos #titulo-masoneria {
-  background-color: #08141b;
-  color: white;
-  text-align: center;
-}
 .container .requisitos {
   grid-column: 1/13;
   width: 100%;
@@ -235,6 +238,13 @@ body .container {
   display: inline-flex;
   border: rgba(75, 80, 83, 0.3764705882) solid 3px;
   border-radius: 3px;
+}
+.container .requisitos .requisitos-items .textos-requisitos {
+  font-size: 1.2rem;
+}
+.container .requisitos .requisitos-items .img-requisitos {
+  width: 70%;
+  height: 100%;
 }
 @media screen and (max-width: 1200px) {
   .container .requisitos .requisitos-items {
@@ -275,10 +285,6 @@ body .container {
   border: rgba(75, 80, 83, 0.3764705882) solid 3px;
 }
 
-.textos-requisitos {
-  font-size: 1rem;
-}
-
 .container .main-compañeros {
   grid-column: 1/13;
 }
@@ -294,6 +300,31 @@ body .container {
   margin: auto;
 }
 .container .main-compañeros .lcom .titulo-compañeros {
+  text-align: center;
+}
+.container .main-compañeros .acordion {
+  margin-top: 20px;
+}
+.container .main-compañeros .acordion .barra {
+  background-color: rgba(128, 128, 128, 0.404);
+}
+.container .main-compañeros .bandera {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.container .encontranos {
+  grid-column: 1/13;
+  background-color: white;
+  border: rgb(82, 77, 77) solid 3px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.container .encontranos #titulo-masoneria {
+  background-color: #08141b;
+  color: white;
   text-align: center;
 }
 
@@ -359,7 +390,8 @@ body .container {
   grid-column: 1/13;
   border-radius: 2px;
   border: #202122 solid 3px;
-  margin: 50px;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 .container .formulario .titulo-formulario {
   border-radius: 2px;
@@ -371,11 +403,12 @@ body .container {
   height: 100px;
 }
 .container .formulario .inputs {
-  padding: 20px 50px;
+  padding: 0px 1rem;
   grid-auto-rows: auto;
   background-color: #acb1b4;
   width: 100%;
   height: 100%;
+  padding-bottom: 10px;
 }
 .container .formulario .inputs label {
   padding: 20px 0px 0px 0px;
@@ -401,17 +434,34 @@ body .container {
   font-size: 1.1rem;
   padding: 20px 30px;
 }
+.container .main-compañeros .argentina .a-texto1 {
+  display: inline-block;
+}
 .container .main-compañeros .argentina .img-i {
-  width: 80%;
+  border: solid 3px rgb(53, 50, 50);
+  width: 100%;
   height: auto;
-  justify-content: center;
+  margin-bottom: 50px;
+}
+.container .main-compañeros .argentina .img-e {
+  border: solid 3px rgb(53, 50, 50);
+  width: 100%;
+  height: auto;
 }
 .container .main-compañeros .argentina .titulo-compañeros {
   text-align: center;
 }
 .container .main-compañeros .argentina #img-a {
-  width: 80%;
+  border: solid 3px rgb(53, 50, 50);
+  width: 100%;
   margin: auto;
+}
+.container .main-compañeros .argentina #img-escuadra {
+  float: right;
+  margin: 10px;
+  width: 500px;
+  height: auto;
+  border: solid 3px rgb(53, 50, 50);
 }
 @media screen and (max-width: 600px) {
   .container .main-compañeros {
